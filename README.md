@@ -5,20 +5,16 @@ This repository contains multiple implementations and experiments for flow measu
 ## Repository Layout
 
 - `Persistent/`
-  - Cuckoo Counter Top-k implementation (C++).
-  - Focused on detecting Top-k elephant flows.
-  - Typical usage: run `make` and then `./cuckoo` in this directory.
+  - WisePIFinder implementation (C++) for persistent flow detection.
+  - Typical usage: run `make` and then `./WisePIFinder`
 
 - `Persistent-Frequent/`
-  - WisePIFinder implementation (C++) for persistent frequent flow detection.
+  - WisePIFinder implementation (C++) for persistent and frequent flow detection.
   - Typical usage: run `make` and then `./WisePIFinder` in this directory.
 
 - `Persistent-Infrequent/`
-  - WisePIFinder implementation (C++) for persistent infrequent flow detection.
+  - WisePIFinder implementation (C++) for persistent and infrequent flow detection.
   - Typical usage: run `make` and then `./WisePIFinder` in this directory.
-
-- `ever-increasing/`
-  - Reserved directory (currently empty).
 
 - `tofino/`
   - Tofino switch implementation.
