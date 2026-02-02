@@ -1,27 +1,39 @@
-# WisePIFinder+
+# WisePIFinder: Finding Persistent and Infrequent Flows
 
-This repository contains multiple implementations and experiments for flow measurement and detection, including software sketches and a Tofino P4 pipeline.
+This repository contains the reference implementation of WisePIFinder and related components used in our work on detecting Persistent and Infrequent Flows.
 
-## Repository Layout
+## Papers
 
-- `Persistent/`
-  - WisePIFinder implementation (C++) for persistent flow detection.
-  - Typical usage: run `make` and then `./WisePIFinder`
+- **Extended journal version (under review)**:  
+  *Finding Persistent and Infrequent Flows: Modeling, Analysis, and Implementation* (TON), under review)
 
-- `Persistent-Frequent/`
-  - WisePIFinder implementation (C++) for persistent and frequent flow detection.
-  - Typical usage: run `make` and then `./WisePIFinder` in this directory.
+- **Conference version (IWQoS'25)**:  
+  *WisePIFinder: Efficient and Accurate Detection of Persistent and Infrequent Flows* (IWQoS 2025)
 
-- `Persistent-Infrequent/`
-  - WisePIFinder implementation (C++) for persistent and infrequent flow detection.
-  - Typical usage: run `make` and then `./WisePIFinder` in this directory.
+## Repository status
 
-- `tofino/`
-  - Tofino switch implementation.
-  - `data_plane/`: P4 data plane programs and configuration.
-  - `control_plane/`: control plane scripts and runtime tools.
+- The repository is released for submission purposes.
+- Documentation is intentionally kept minimal at this stage to avoid inconsistencies.
+- A more complete, validated reproduction guide will be provided upon acceptance / camera-ready.
 
-## Notes
+## Contents (high-level)
 
-- Build and runtime parameters are defined in each subproject's source and Makefile.
-- Add datasets or experiment scripts under the relevant subdirectory as needed.
+- Implementation of WisePIFinder and components used in the paper(s).
+- Additional scripts and/or experimental code are organized by directories (see folder names).
+
+> Note: If you are looking for an exact reproduction pipeline, please open an issue or contact the authors.
+
+## Citation
+
+If you use this code, please cite the IWQoS'25 paper (and the journal version once available).
+
+```bibtex
+@inproceedings{ma2025wisepifinder,
+  title={WisePIFinder: Efficient and Accurate Detection of Persistent and Infrequent Flows},
+  author={Ma, Zengxie and Xin, Yao and Chen, Ying and Fan, Zhuochen and Li, Tong and Hu, Ning and Liao, Qing and Zhao, Yi and Zhang, Feng},
+  booktitle={2025 IEEE/ACM 33rd International Symposium on Quality of Service (IWQoS)},
+  pages={1--10},
+  year={2025},
+  organization={IEEE}
+}
+```
