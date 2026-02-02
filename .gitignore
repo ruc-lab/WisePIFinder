@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+
+# Build artifacts
+/build/
+/bin/
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.exe
+*.out
+*.dSYM/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor/IDE
+.vscode/
